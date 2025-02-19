@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="HoTVIN0hwU-V1CISaSf3WQ" Reference="Q7wabYkYf0-ESJHlW9Gc6Q/_U3cwrnGykuuFhn4araLFQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acme-test.uipath.com/checks/search" CVScreenId="3d3a4239-9fc7-4613-af3f-fcffa2dbae74" CvElementArea="466, 512, 223, 37" CvType="InputBox" DesignTimeRectangle="468, 514, 220, 34" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aria-role='button' tag='BUTTON' /&gt;" FuzzySelectorArgument="[&quot;&lt;webctrl aria-role='button' tag='BUTTON' type='button' class='btn dropdown-toggle btn-default bs-placeholder' aaname='&quot;+str_Month+&quot;' check:innerText='&quot;+str_Month+&quot;' /&gt;&quot;]" Guid="e5f91d8f-a73e-4a87-b315-0aac73614d1c" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Search Client Check' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="3d3a4239-9fc7-4613-af3f-fcffa2dbae74" CvTextArea="467, 492, 47, 13" CvTextArgument="Month:" CvType="Text" DesignTimeRectangle="468, 489, 47, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Month:' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Month:' tag='LABEL' type='' class='' check:innerText='Month:' /&gt;" Guid="20bf7128-4d43-460c-9dc8-8966dbc44b4c" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a6a3406a86b2493c4eda76e185d212a8.png" xmlns="">0ifVyZyD9o0mz32clzgkvRA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

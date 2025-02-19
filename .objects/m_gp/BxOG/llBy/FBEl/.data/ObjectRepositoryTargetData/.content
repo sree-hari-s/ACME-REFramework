@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="w4x5GehnpUCKciE9qjR76g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acme-test.uipath.com/login" CVScreenId="33ac149e-ec50-4224-ae88-478bd8abd336" CvElementArea="181, 607, 63, 36" CvTextArea="195, 618, 36, 16" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="183, 608, 60, 34" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='btn btn-primary' aaname='                             Login                         ' check:innerText='Login' /&gt;" Guid="5c5ab165-88ff-481f-bb5e-eeaea456ab28" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Log In' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="33ac149e-ec50-4224-ae88-478bd8abd336" CvTextArea="181, 385, 401, 20" CvTextArgument="To continue, please authenticate here" CvType="Text" DesignTimeRectangle="183, 383, 485, 26" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H3' type='' class='' aaname='To continue, please authenticate here' check:innerText='To continue, please authenticate here' /&gt;" Guid="62a6a19d-3fb6-4dbf-9a96-21c625afca7b" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0a9cb84ea5af216a7f3f5d745f42a98a.png" xmlns="">0lAKggNw-0kqBlibOllg6Ig</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

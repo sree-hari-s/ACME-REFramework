@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="k7WzbJZbfUupimEH5r3NVQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acme-test.uipath.com/checks/search" CVScreenId="dd278b5f-95cc-4ebd-b672-59de1e63a8c4" CvElementArea="465, 437, 490, 38" CvType="InputBox" DesignTimeRectangle="468, 440, 485, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='checkDay' tag='INPUT' type='text' class='form-control' aaname='' /&gt;" Guid="f01fd265-770e-4bf3-a04a-fd6673e64804" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Search Client Check' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="dd278b5f-95cc-4ebd-b672-59de1e63a8c4" DesignTimeRectangle="468, 415, 26, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Day' tag='LABEL' type='' class='' check:innerText='Day' /&gt;" Guid="218cee95-6aed-4d2e-9315-554c9999698a" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="90ae8da797821910cf903b0377a95a99.png" xmlns="">0znl82B6fSE2X8X4C6ZLH5w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
