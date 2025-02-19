@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="Iey957rprkKq0fX08hIVtQ" Reference="Q7wabYkYf0-ESJHlW9Gc6Q/OzAMifpAWkK4ONEakkNmSQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acme-test.uipath.com/work-items" DesignTimeRectangle="307, 524, 158, 39" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="[&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl isleaf='1' type='' tag='TD' class='' aaname='&quot;+in_WIID+&quot;' check:innerText='&quot;+in_WIID+&quot;' /&gt;&quot;]" Guid="019c5509-3f93-482c-a990-c03bb285a918" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="ec43cd7c26d6754fdef9eb28e990b042.png" xmlns="">0XdYr2G1gzUG72vdar1-8JQ</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">Click</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>
