@@ -6,6 +6,7 @@
   "dependencies": {
     "UiPath.DocumentUnderstanding.Activities": "[2.13.2-preview]",
     "UiPath.Excel.Activities": "[2.24.4]",
+    "UiPath.PDF.Activities": "[3.21.0-preview]",
     "UiPath.System.Activities": "[24.10.7]",
     "UiPath.Testing.Activities": "[24.10.3]",
     "UiPath.UIAutomation.Activities": "[24.12.1-preview]"
