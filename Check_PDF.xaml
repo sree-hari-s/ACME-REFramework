@@ -4,6 +4,9 @@
     <x:Property Name="out_CheckNumber" Type="OutArgument(x:String)" />
     <x:Property Name="out_CheckDate" Type="OutArgument(x:String)" />
     <x:Property Name="out_ClientID" Type="OutArgument(x:String)" />
+    <x:Property Name="out_ClientName" Type="OutArgument(x:String)" />
+    <x:Property Name="out_ClientAddress" Type="OutArgument(x:String)" />
+    <x:Property Name="out_CheckAmount" Type="OutArgument(x:String)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
@@ -118,7 +121,7 @@
       <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Check_PDF" sap:VirtualizedContainerService.HintSize="959,1557" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Check_PDF" sap:VirtualizedContainerService.HintSize="959,2302" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="str_PDFData" />
     </Sequence.Variables>
@@ -127,7 +130,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,284" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="CommentOut_1">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,173" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
@@ -145,11 +148,20 @@
           </uisape:ExtractPDFText>
         </Sequence>
       </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <ui:ReadPDFText PreserveFormatting="{x:Null}" DisplayName="Read PDF Text" FileName="[&quot;Data\Input\&quot;+in_WIID+&quot;.pdf&quot;]" sap:VirtualizedContainerService.HintSize="486,114" sap2010:WorkflowViewState.IdRef="ReadPDFText_1" Range="All" Text="[str_PDFData]" />
-    <uast:ExtractText FirstMatch="{x:Null}" Results="{x:Null}" DisplayName="Extract Text" EndingText="Check Date" ExtractBaseURLOnly="False" ExtractOptions="BetweenStrings" sap:VirtualizedContainerService.HintSize="486,324" sap2010:WorkflowViewState.IdRef="ExtractText_1" IgnoreDuplicates="False" MatchCase="False" Result="[out_CheckNumber]" Source="[str_PDFData]" StartingText="Check Number " />
-    <uast:ExtractText FirstMatch="{x:Null}" Results="{x:Null}" DisplayName="Extract Text" EndingText="Check Amount" ExtractBaseURLOnly="False" ExtractOptions="BetweenStrings" sap:VirtualizedContainerService.HintSize="486,324" sap2010:WorkflowViewState.IdRef="ExtractText_2" IgnoreDuplicates="False" MatchCase="False" Result="[out_CheckDate]" Source="[str_PDFData]" StartingText="Check Date " />
+    <ui:ReadPDFText PreserveFormatting="{x:Null}" DisplayName="Read PDF Text" FileName="[&quot;Data\Input\&quot;+in_WIID+&quot;.pdf&quot;]" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="ReadPDFText_1" Range="All" Text="[str_PDFData]" />
+    <uast:ExtractText FirstMatch="{x:Null}" Results="{x:Null}" DisplayName="Extract Text" EndingText="Check Date" ExtractBaseURLOnly="False" ExtractOptions="BetweenStrings" sap:VirtualizedContainerService.HintSize="416,324" sap2010:WorkflowViewState.IdRef="ExtractText_1" IgnoreDuplicates="False" MatchCase="False" Result="[out_CheckNumber]" Source="[str_PDFData]" StartingText="Check Number " />
+    <uast:ExtractText FirstMatch="{x:Null}" Results="{x:Null}" DisplayName="Extract Text" EndingText="Check Amount" ExtractBaseURLOnly="False" ExtractOptions="BetweenStrings" sap:VirtualizedContainerService.HintSize="416,324" sap2010:WorkflowViewState.IdRef="ExtractText_2" IgnoreDuplicates="False" MatchCase="False" Result="[out_CheckDate]" Source="[str_PDFData]" StartingText="Check Date " />
     <uast:ExtractText FirstMatch="{x:Null}" Results="{x:Null}" DisplayName="Extract Text" EndingText="Client Address" ExtractBaseURLOnly="False" ExtractOptions="BetweenStrings" sap:VirtualizedContainerService.HintSize="416,324" sap2010:WorkflowViewState.IdRef="ExtractText_3" IgnoreDuplicates="False" MatchCase="False" Result="[out_ClientID]" Source="[str_PDFData]" StartingText="Client ID " />
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Check Number: &quot;+out_CheckNumber+&quot; Check Date: &quot;+out_CheckDate+&quot; Client ID: &quot;+out_ClientID]" />
+    <uast:ExtractText FirstMatch="{x:Null}" Results="{x:Null}" DisplayName="Extract Text" EndingText="Client ID " ExtractBaseURLOnly="False" ExtractOptions="BetweenStrings" sap:VirtualizedContainerService.HintSize="416,324" sap2010:WorkflowViewState.IdRef="ExtractText_4" IgnoreDuplicates="False" MatchCase="False" Result="[out_ClientName]" Source="[str_PDFData]" StartingText="Client Name " />
+    <uast:ExtractText FirstMatch="{x:Null}" Results="{x:Null}" DisplayName="Extract Text" EndingText="Check Information" ExtractBaseURLOnly="False" ExtractOptions="BetweenStrings" sap:VirtualizedContainerService.HintSize="416,324" sap2010:WorkflowViewState.IdRef="ExtractText_5" IgnoreDuplicates="False" MatchCase="False" Result="[out_ClientAddress]" Source="[str_PDFData]" StartingText="Client Address" />
+    <uast:ExtractText FirstMatch="{x:Null}" Results="{x:Null}" DisplayName="Extract Text" EndingText="(incl. currency)" ExtractBaseURLOnly="False" ExtractOptions="BetweenStrings" sap:VirtualizedContainerService.HintSize="416,324" sap2010:WorkflowViewState.IdRef="ExtractText_6" IgnoreDuplicates="False" MatchCase="False" Result="[out_CheckAmount]" Source="[str_PDFData]" StartingText="Check Amount " />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Check Number: &quot;+out_CheckNumber+&quot; Check Date: &quot;+out_CheckDate+&quot; Client ID: &quot;+out_ClientID+&quot;Client Name: &quot;+out_ClientName+&quot; Client Address: &quot;+out_ClientAddress]" />
   </Sequence>
 </Activity>
